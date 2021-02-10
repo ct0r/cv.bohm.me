@@ -35,25 +35,25 @@ import { decryptBytes } from "./crypto.js";
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[6] = list[i];
+	child_ctx[8] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[9] = list[i];
+	child_ctx[11] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_2(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[12] = list[i];
+	child_ctx[14] = list[i];
 	return child_ctx;
 }
 
-// (146:0) {:catch error}
+// (153:0) {:catch error}
 function create_catch_block(ctx) {
-	let t0_value = console.log(/*error*/ ctx[15]) + "";
+	let t0_value = console.log(/*error*/ ctx[17]) + "";
 	let t0;
 	let t1;
 	let div2;
@@ -76,7 +76,7 @@ function create_catch_block(ctx) {
 			insert(target, div2, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*promise*/ 1 && t0_value !== (t0_value = console.log(/*error*/ ctx[15]) + "")) set_data(t0, t0_value);
+			if (dirty & /*promise*/ 1 && t0_value !== (t0_value = console.log(/*error*/ ctx[17]) + "")) set_data(t0, t0_value);
 		},
 		i: noop,
 		o: noop,
@@ -88,7 +88,7 @@ function create_catch_block(ctx) {
 	};
 }
 
-// (75:0) {:then data}
+// (82:0) {:then data}
 function create_then_block(ctx) {
 	let div6;
 	let div5;
@@ -97,11 +97,11 @@ function create_then_block(ctx) {
 	let t0;
 	let div1;
 	let h1;
-	let t1_value = /*data*/ ctx[5].name + "";
+	let t1_value = /*data*/ ctx[7].name + "";
 	let t1;
 	let t2;
 	let h2;
-	let t3_value = /*data*/ ctx[5].occupation + "";
+	let t3_value = /*data*/ ctx[7].occupation + "";
 	let t3;
 	let t4;
 	let div2;
@@ -233,46 +233,46 @@ function create_then_block(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if ((!current || dirty & /*promise*/ 1) && t1_value !== (t1_value = /*data*/ ctx[5].name + "")) set_data(t1, t1_value);
-			if ((!current || dirty & /*promise*/ 1) && t3_value !== (t3_value = /*data*/ ctx[5].occupation + "")) set_data(t3, t3_value);
+			if ((!current || dirty & /*promise*/ 1) && t1_value !== (t1_value = /*data*/ ctx[7].name + "")) set_data(t1, t1_value);
+			if ((!current || dirty & /*promise*/ 1) && t3_value !== (t3_value = /*data*/ ctx[7].occupation + "")) set_data(t3, t3_value);
 			const sidebarsection0_changes = {};
 
-			if (dirty & /*$$scope, promise*/ 65537) {
+			if (dirty & /*$$scope, promise*/ 262145) {
 				sidebarsection0_changes.$$scope = { dirty, ctx };
 			}
 
 			sidebarsection0.$set(sidebarsection0_changes);
 			const sidebarsection1_changes = {};
 
-			if (dirty & /*$$scope, promise*/ 65537) {
+			if (dirty & /*$$scope, promise*/ 262145) {
 				sidebarsection1_changes.$$scope = { dirty, ctx };
 			}
 
 			sidebarsection1.$set(sidebarsection1_changes);
 			const sidebarsection2_changes = {};
 
-			if (dirty & /*$$scope, promise*/ 65537) {
+			if (dirty & /*$$scope, promise*/ 262145) {
 				sidebarsection2_changes.$$scope = { dirty, ctx };
 			}
 
 			sidebarsection2.$set(sidebarsection2_changes);
 			const sidebarsection3_changes = {};
 
-			if (dirty & /*$$scope, promise*/ 65537) {
+			if (dirty & /*$$scope, promise*/ 262145) {
 				sidebarsection3_changes.$$scope = { dirty, ctx };
 			}
 
 			sidebarsection3.$set(sidebarsection3_changes);
 			const contentsection0_changes = {};
 
-			if (dirty & /*$$scope, promise*/ 65537) {
+			if (dirty & /*$$scope, promise*/ 262145) {
 				contentsection0_changes.$$scope = { dirty, ctx };
 			}
 
 			contentsection0.$set(contentsection0_changes);
 			const contentsection1_changes = {};
 
-			if (dirty & /*$$scope, promise*/ 65537) {
+			if (dirty & /*$$scope, promise*/ 262145) {
 				contentsection1_changes.$$scope = { dirty, ctx };
 			}
 
@@ -309,13 +309,13 @@ function create_then_block(ctx) {
 	};
 }
 
-// (89:20) <SidebarSection title="Contact">
+// (96:20) <SidebarSection title="Contact">
 function create_default_slot_5(ctx) {
 	let h40;
 	let t1;
 	let div0;
 	let a0;
-	let t2_value = /*data*/ ctx[5].phone + "";
+	let t2_value = /*data*/ ctx[7].phone + "";
 	let t2;
 	let a0_href_value;
 	let t3;
@@ -323,7 +323,7 @@ function create_default_slot_5(ctx) {
 	let t5;
 	let div1;
 	let a1;
-	let t6_value = /*data*/ ctx[5].email + "";
+	let t6_value = /*data*/ ctx[7].email + "";
 	let t6;
 	let a1_href_value;
 	let t7;
@@ -332,7 +332,7 @@ function create_default_slot_5(ctx) {
 	let div2;
 	let a2;
 	let t10;
-	let t11_value = /*data*/ ctx[5].github + "";
+	let t11_value = /*data*/ ctx[7].github + "";
 	let t11;
 	let a2_href_value;
 
@@ -360,13 +360,13 @@ function create_default_slot_5(ctx) {
 			t10 = text("github.com/");
 			t11 = text(t11_value);
 			attr(h40, "class", "text-xs font-bold tracking-widest uppercase");
-			attr(a0, "href", a0_href_value = "tel:" + /*data*/ ctx[5].phone);
+			attr(a0, "href", a0_href_value = "tel:" + /*data*/ ctx[7].phone);
 			attr(div0, "class", "mb-4");
 			attr(h41, "class", "text-xs font-bold tracking-widest uppercase");
-			attr(a1, "href", a1_href_value = "mailto:" + /*data*/ ctx[5].email);
+			attr(a1, "href", a1_href_value = "mailto:" + /*data*/ ctx[7].email);
 			attr(div1, "class", "mb-4");
 			attr(h42, "class", "text-xs font-bold tracking-widest uppercase");
-			attr(a2, "href", a2_href_value = "https://github.com/" + /*data*/ ctx[5].github);
+			attr(a2, "href", a2_href_value = "https://github.com/" + /*data*/ ctx[7].github);
 			attr(a2, "target", "_blank");
 			attr(div2, "class", "mb-4");
 		},
@@ -391,21 +391,21 @@ function create_default_slot_5(ctx) {
 			append(a2, t11);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*promise*/ 1 && t2_value !== (t2_value = /*data*/ ctx[5].phone + "")) set_data(t2, t2_value);
+			if (dirty & /*promise*/ 1 && t2_value !== (t2_value = /*data*/ ctx[7].phone + "")) set_data(t2, t2_value);
 
-			if (dirty & /*promise*/ 1 && a0_href_value !== (a0_href_value = "tel:" + /*data*/ ctx[5].phone)) {
+			if (dirty & /*promise*/ 1 && a0_href_value !== (a0_href_value = "tel:" + /*data*/ ctx[7].phone)) {
 				attr(a0, "href", a0_href_value);
 			}
 
-			if (dirty & /*promise*/ 1 && t6_value !== (t6_value = /*data*/ ctx[5].email + "")) set_data(t6, t6_value);
+			if (dirty & /*promise*/ 1 && t6_value !== (t6_value = /*data*/ ctx[7].email + "")) set_data(t6, t6_value);
 
-			if (dirty & /*promise*/ 1 && a1_href_value !== (a1_href_value = "mailto:" + /*data*/ ctx[5].email)) {
+			if (dirty & /*promise*/ 1 && a1_href_value !== (a1_href_value = "mailto:" + /*data*/ ctx[7].email)) {
 				attr(a1, "href", a1_href_value);
 			}
 
-			if (dirty & /*promise*/ 1 && t11_value !== (t11_value = /*data*/ ctx[5].github + "")) set_data(t11, t11_value);
+			if (dirty & /*promise*/ 1 && t11_value !== (t11_value = /*data*/ ctx[7].github + "")) set_data(t11, t11_value);
 
-			if (dirty & /*promise*/ 1 && a2_href_value !== (a2_href_value = "https://github.com/" + /*data*/ ctx[5].github)) {
+			if (dirty & /*promise*/ 1 && a2_href_value !== (a2_href_value = "https://github.com/" + /*data*/ ctx[7].github)) {
 				attr(a2, "href", a2_href_value);
 			}
 		},
@@ -425,9 +425,9 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (112:20) <SidebarSection title="Skills">
+// (119:20) <SidebarSection title="Skills">
 function create_default_slot_4(ctx) {
-	let t_value = /*data*/ ctx[5].skills + "";
+	let t_value = /*data*/ ctx[7].skills + "";
 	let t;
 
 	return {
@@ -438,7 +438,7 @@ function create_default_slot_4(ctx) {
 			insert(target, t, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*promise*/ 1 && t_value !== (t_value = /*data*/ ctx[5].skills + "")) set_data(t, t_value);
+			if (dirty & /*promise*/ 1 && t_value !== (t_value = /*data*/ ctx[7].skills + "")) set_data(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) detach(t);
@@ -446,15 +446,15 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (116:28) {#each data.languages as language}
+// (123:28) {#each data.languages as language}
 function create_each_block_2(ctx) {
 	let li;
-	let t0_value = /*language*/ ctx[12].name + "";
+	let t0_value = /*language*/ ctx[14].name + "";
 	let t0;
 	let t1;
 	let span;
 	let t2;
-	let t3_value = /*language*/ ctx[12].level + "";
+	let t3_value = /*language*/ ctx[14].level + "";
 	let t3;
 	let t4;
 	let t5;
@@ -482,8 +482,8 @@ function create_each_block_2(ctx) {
 			append(li, t5);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*promise*/ 1 && t0_value !== (t0_value = /*language*/ ctx[12].name + "")) set_data(t0, t0_value);
-			if (dirty & /*promise*/ 1 && t3_value !== (t3_value = /*language*/ ctx[12].level + "")) set_data(t3, t3_value);
+			if (dirty & /*promise*/ 1 && t0_value !== (t0_value = /*language*/ ctx[14].name + "")) set_data(t0, t0_value);
+			if (dirty & /*promise*/ 1 && t3_value !== (t3_value = /*language*/ ctx[14].level + "")) set_data(t3, t3_value);
 		},
 		d(detaching) {
 			if (detaching) detach(li);
@@ -491,10 +491,10 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (114:20) <SidebarSection title="Languages">
+// (121:20) <SidebarSection title="Languages">
 function create_default_slot_3(ctx) {
 	let ul;
-	let each_value_2 = /*data*/ ctx[5].languages;
+	let each_value_2 = /*data*/ ctx[7].languages;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_2.length; i += 1) {
@@ -518,7 +518,7 @@ function create_default_slot_3(ctx) {
 		},
 		p(ctx, dirty) {
 			if (dirty & /*promise*/ 1) {
-				each_value_2 = /*data*/ ctx[5].languages;
+				each_value_2 = /*data*/ ctx[7].languages;
 				let i;
 
 				for (i = 0; i < each_value_2.length; i += 1) {
@@ -547,9 +547,9 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (126:20) <SidebarSection title="Interests">
+// (133:20) <SidebarSection title="Interests">
 function create_default_slot_2(ctx) {
-	let t_value = /*data*/ ctx[5].interests.join(", ") + "";
+	let t_value = /*data*/ ctx[7].interests.join(", ") + "";
 	let t;
 
 	return {
@@ -560,7 +560,7 @@ function create_default_slot_2(ctx) {
 			insert(target, t, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*promise*/ 1 && t_value !== (t_value = /*data*/ ctx[5].interests.join(", ") + "")) set_data(t, t_value);
+			if (dirty & /*promise*/ 1 && t_value !== (t_value = /*data*/ ctx[7].interests.join(", ") + "")) set_data(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) detach(t);
@@ -568,11 +568,11 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (133:24) {#each data.positions as position}
+// (140:24) {#each data.positions as position}
 function create_each_block_1(ctx) {
 	let contentitem;
 	let current;
-	const contentitem_spread_levels = [/*position*/ ctx[9]];
+	const contentitem_spread_levels = [/*position*/ ctx[11]];
 	let contentitem_props = {};
 
 	for (let i = 0; i < contentitem_spread_levels.length; i += 1) {
@@ -591,7 +591,7 @@ function create_each_block_1(ctx) {
 		},
 		p(ctx, dirty) {
 			const contentitem_changes = (dirty & /*promise*/ 1)
-			? get_spread_update(contentitem_spread_levels, [get_spread_object(/*position*/ ctx[9])])
+			? get_spread_update(contentitem_spread_levels, [get_spread_object(/*position*/ ctx[11])])
 			: {};
 
 			contentitem.$set(contentitem_changes);
@@ -611,11 +611,11 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (132:20) <ContentSection title="Experience">
+// (139:20) <ContentSection title="Experience">
 function create_default_slot_1(ctx) {
 	let each_1_anchor;
 	let current;
-	let each_value_1 = /*data*/ ctx[5].positions;
+	let each_value_1 = /*data*/ ctx[7].positions;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -644,7 +644,7 @@ function create_default_slot_1(ctx) {
 		},
 		p(ctx, dirty) {
 			if (dirty & /*promise*/ 1) {
-				each_value_1 = /*data*/ ctx[5].positions;
+				each_value_1 = /*data*/ ctx[7].positions;
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -695,11 +695,11 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (138:24) {#each data.educations as education}
+// (145:24) {#each data.educations as education}
 function create_each_block(ctx) {
 	let contentitem;
 	let current;
-	const contentitem_spread_levels = [/*education*/ ctx[6]];
+	const contentitem_spread_levels = [/*education*/ ctx[8]];
 	let contentitem_props = {};
 
 	for (let i = 0; i < contentitem_spread_levels.length; i += 1) {
@@ -718,7 +718,7 @@ function create_each_block(ctx) {
 		},
 		p(ctx, dirty) {
 			const contentitem_changes = (dirty & /*promise*/ 1)
-			? get_spread_update(contentitem_spread_levels, [get_spread_object(/*education*/ ctx[6])])
+			? get_spread_update(contentitem_spread_levels, [get_spread_object(/*education*/ ctx[8])])
 			: {};
 
 			contentitem.$set(contentitem_changes);
@@ -738,11 +738,11 @@ function create_each_block(ctx) {
 	};
 }
 
-// (137:20) <ContentSection title="Education">
+// (144:20) <ContentSection title="Education">
 function create_default_slot(ctx) {
 	let each_1_anchor;
 	let current;
-	let each_value = /*data*/ ctx[5].educations;
+	let each_value = /*data*/ ctx[7].educations;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -771,7 +771,7 @@ function create_default_slot(ctx) {
 		},
 		p(ctx, dirty) {
 			if (dirty & /*promise*/ 1) {
-				each_value = /*data*/ ctx[5].educations;
+				each_value = /*data*/ ctx[7].educations;
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -822,7 +822,7 @@ function create_default_slot(ctx) {
 	};
 }
 
-// (66:16)      <div         class="absolute right-1/2 bottom-1/2 transform translate-x-1/2 translate-y-1/2 "     >         <div             style="border-top-color:transparent"             class="border-solid animate-spin rounded-full border-gray-800 border-8 h-48 w-48"         />     </div> {:then data}
+// (73:16)      <div         class="absolute right-1/2 bottom-1/2 transform translate-x-1/2 translate-y-1/2 "     >         <div             style="border-top-color:transparent"             class="border-solid animate-spin rounded-full border-gray-800 border-8 h-48 w-48"         />     </div> {:then data}
 function create_pending_block(ctx) {
 	let div1;
 
@@ -857,8 +857,8 @@ function create_fragment(ctx) {
 		pending: create_pending_block,
 		then: create_then_block,
 		catch: create_catch_block,
-		value: 5,
-		error: 15,
+		value: 7,
+		error: 17,
 		blocks: [,,,]
 	};
 
@@ -884,7 +884,7 @@ function create_fragment(ctx) {
 				
 			} else {
 				const child_ctx = ctx.slice();
-				child_ctx[5] = child_ctx[15] = info.resolved;
+				child_ctx[7] = child_ctx[17] = info.resolved;
 				info.block.p(child_ctx, dirty);
 			}
 		},
@@ -910,45 +910,13 @@ function create_fragment(ctx) {
 	};
 }
 
-async function map(data) {
-	return {
-		...data,
-		skills: data.skills.join(", "),
-		languages: data.languages.map(l => {
-			const lngNames = new Intl.DisplayNames(["cs"], { type: "language" });
-
-			return {
-				name: lngNames.of(l.code),
-				level: l.level
-			};
-		}),
-		educations: data.educations.map(e => {
-			const since = new Date(e.since).getFullYear();
-			const until = new Date(e.until).getFullYear();
-
-			return {
-				title: e.field,
-				subtitle: `${e.school} / ${since} - ${until}`
-			};
-		}),
-		positions: data.positions.map(p => {
-			const since = new Date(p.since).getFullYear();
-			const until = new Date(p.until).getFullYear();
-			const range = `${since} - ${until}`;
-
-			return {
-				title: p.role,
-				subtitle: p.company ? `${p.company} / ${range}` : range,
-				description: p.description,
-				responsibilities: p.responsibilities
-			};
-		})
-	};
-}
-
 function instance($$self, $$props, $$invalidate) {
 	let { id } = $$props;
 	let { key } = $$props;
+
+	// Replace by Intl.DisplayNames once supported by browsers
+	const lngNames = { cs: "Čeština", en: "Angličtina" };
+
 	let promise;
 
 	async function load() {
@@ -960,6 +928,44 @@ function instance($$self, $$props, $$invalidate) {
 
 	async function decrypt(data) {
 		return decryptBytes(decodeURIComponent(key), data);
+	}
+
+	async function map(data) {
+		return {
+			...data,
+			skills: data.skills.join(", "),
+			languages: data.languages.map(l => {
+				// const lngNames = new Intl.DisplayNames(["cs"], {
+				//     type: "language",
+				// });
+				return {
+					name: lngNames[l.code],
+					// name: lngNames.of(l.code),
+					level: l.level
+				};
+			}),
+			educations: data.educations.map(e => {
+				const since = new Date(e.since).getFullYear();
+				const until = new Date(e.until).getFullYear();
+
+				return {
+					title: e.field,
+					subtitle: `${e.school} / ${since} - ${until}`
+				};
+			}),
+			positions: data.positions.map(p => {
+				const since = new Date(p.since).getFullYear();
+				const until = new Date(p.until).getFullYear();
+				const range = `${since} - ${until}`;
+
+				return {
+					title: p.role,
+					subtitle: p.company ? `${p.company} / ${range}` : range,
+					description: p.description,
+					responsibilities: p.responsibilities
+				};
+			})
+		};
 	}
 
 	promise = load().then(decrypt).then(map);
