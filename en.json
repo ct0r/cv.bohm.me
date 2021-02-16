@@ -1,0 +1,17 @@
+{
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "github": "GitHub",
+    "skills": "Skills",
+    "languages": "Languages",
+    "interests": "Interests",
+    "experience": "Experience",
+    "education": "Education",
+    "error_code": "500",
+    "error_message": "Error",
+    "error_description": "That is embarrassing...",
+    "not_found_code": "404",
+    "not_found_message": "Page not found",
+    "not_found_description": "The page you are looking for was not found."
+}

@@ -1,0 +1,17 @@
+{
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "email": "Email",
+    "github": "GitHub",
+    "skills": "Dovednosti",
+    "languages": "Jazyky",
+    "interests": "Zájmy",
+    "experience": "Zkušenosti",
+    "education": "Vzdělání",
+    "error_code": "500",
+    "error_message": "Chyba",
+    "error_description": "To je trapas...",
+    "not_found_code": "404",
+    "not_found_message": "Stránka nenalezena",
+    "not_found_description": "Stránka kterou hledáte nebyla nalezena."
+}
